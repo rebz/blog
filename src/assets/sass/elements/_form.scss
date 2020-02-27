@@ -1,0 +1,67 @@
+fieldset {
+
+}
+
+legend {
+
+}
+
+select, input, textarea {
+    border: $color-grey-400 solid $size-px;
+    border-radius: 0;
+    appearance: none;
+    background: $color-white;
+    padding: $size-1 $size-2;
+    min-height: $size-10;
+    width: 100%;
+
+    &:focus {
+        @include focus();
+    }
+
+    &:disabled {
+        border-color: $color-grey-100;
+    }
+
+    &::placeholder {
+        @include font-size($text-sm);
+    }
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    min-height: auto;
+    height: $size-4;
+    width: $size-4;
+    border-width: $size-px * 2;
+
+    &:checked {
+        box-shadow: $shadow-inner-white;
+        border-color: $color-primary-300;
+        background-color: $color-primary-500;
+
+        &:disabled {
+            border-color: $color-grey-200;
+            background-color: $color-grey-300;
+        }
+    }
+}
+
+input[type="radio"] {
+    border-radius: $size-4;
+}
+
+select[multiple="multiple"] option {
+    word-wrap: normal !important;
+    white-space: normal;
+    padding: $size-2 $size-1;
+    border-top: $color-grey-300 dashed $size-px;
+
+    &:first-child {
+        border-top: none;
+    }
+}
+
+textarea {
+    min-height: $size-32;
+}

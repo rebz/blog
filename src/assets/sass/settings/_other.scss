@@ -1,0 +1,22 @@
+/*
+ *  User Select / Text Highlight
+ */
+
+    $highlight-selection: #000;
+    $highlight-font-color: #fff;
+
+
+/*
+ *  Styling for HTML and Body elements
+ */
+
+    @mixin html() {
+        background-color: $color-grey-200;
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    @mixin body() {
+        // background-color: $color-white;
+        height: 100%;
+    }
