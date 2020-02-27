@@ -10,8 +10,8 @@ This is the project you get when you run `gridsome create new-project`.
 
 ### 2. Install Dependencies
 
-1. `nvm use` to install default starter
-2. `npm i` to open the folder
+1. `nvm use` to switch to Node Version defined in `.npmrc`
+2. `npm i` to install dependencies
 
 ### 3. Start Coding
 
