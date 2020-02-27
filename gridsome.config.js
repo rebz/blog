@@ -16,8 +16,14 @@ module.exports = {
 				}
 			}
 		},
+		{
+			use: '@gridsome/plugin-google-analytics',
+			options: {
+				id: process.env.GOOGLE_ANALYTICS || undefined
+			}
+		}
 	],
-	templates: {
-		Tag: '/tag/:id',
+templates: {
+	Tag: '/tag/:id',
 	}
 }

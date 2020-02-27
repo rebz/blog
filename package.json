@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/vue-remark": "^0.1.10",
     "gridsome": "^0.7.0",
     "gridsome-plugin-rss": "^1.2.0"
