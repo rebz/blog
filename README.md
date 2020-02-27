@@ -2,13 +2,16 @@
 
 This is the project you get when you run `gridsome create new-project`.
 
-### 1. Install Gridsome CLI tool if you don't have
+### 1. Install Gridsome CLI tool
 
-`npm install --global @gridsome/cli`
+`npm i -G @gridsome/cli`
 
-### 2. Create a Gridsome project
+### 2. Install Dependencies
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+1. `nvm use` to install default starter
+2. `npm i` to open the folder
+
+### 3. Start Coding
+
+`npm run dev` to start a local dev server at `http://localhost:8080`
+

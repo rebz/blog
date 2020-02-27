@@ -3,11 +3,13 @@
   "private": true,
   "scripts": {
     "build": "gridsome build",
-    "develop": "gridsome develop",
+    "dev": "gridsome develop",
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "@gridsome/vue-remark": "^0.1.10",
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-rss": "^1.2.0"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",

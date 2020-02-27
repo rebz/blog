@@ -1,8 +1,24 @@
-*.log
 .cache
-.DS_Store
 src/.temp
+/dist
+/_files
+.DS_Store
 node_modules
-dist
+
+# local env files
 .env
-.env.*
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.log
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

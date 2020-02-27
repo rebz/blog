@@ -1,18 +1,14 @@
 <template>
-
     <Layout>
-
-		<h1>Home</h1>
-        <p>content</p>
-
+        <h1>Blog</h1>
+        <p>stuff</p>
     </Layout>
-
 </template>
 
 <script>
 export default {
     metaInfo: {
-        title: "Home"
+        title: "Blog"
     }
 };
 </script>
