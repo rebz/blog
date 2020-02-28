@@ -21,9 +21,49 @@ module.exports = {
 			options: {
 				id: process.env.GOOGLE_ANALYTICS || undefined
 			}
-		}
+		},
+		// {
+		// 	use: 'gridsome-plugin-rss',
+		// 	options: {
+		// 		contentTypeName: 'BlogPost',
+		// 		feedOptions: {
+		// 			title: 'My Awesome Blog',
+		// 			feed_url: 'https://superblog.com/rss.xml',
+		// 			site_url: 'https://superblog.com'
+		// 		},
+		// 		feedItemOptions: node => ({
+		// 			title: node.title,
+		// 			description: node.description,
+		// 			url: 'https://superblog.com/post/' + node.slug,
+		// 			author: node.fields.author
+		// 		}),
+		// 		output: {
+		// 			dir: './static',
+		// 			name: 'rss.xml'
+		// 		}
+		// 	}
+		// },
+		// {
+		// 	use: 'gridsome-plugin-pwa',
+		// 	options: {
+		// 		title: 'Gridsome',
+		// 		startUrl: '/',
+		// 		display: 'standalone',
+		// 		statusBarStyle: 'default',
+		// 		manifestPath: 'manifest.json',
+		// 		disableServiceWorker: true,
+		// 		serviceWorkerPath: 'service-worker.js',
+		// 		cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+		// 		shortName: 'Gridsome',
+		// 		themeColor: '#666600',
+		// 		backgroundColor: '#ffffff',
+		// 		icon: '', // must be provided like 'src/favicon.png'
+		// 		msTileImage: '',
+		// 		msTileColor: '#666600'
+		// 	}
+		// }
 	],
-templates: {
-	Tag: '/tag/:id',
+	templates: {
+		Tag: '/tag/:id',
 	}
 }

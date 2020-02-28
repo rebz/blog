@@ -2,8 +2,9 @@
 
     <Layout>
 
+
+
 		<h1>Home</h1>
-        <p>content</p>
 
     </Layout>
 

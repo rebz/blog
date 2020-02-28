@@ -1,5 +1,5 @@
 <template functional>
-    <div class="Logo">
-        <span>/rebz</span>
-    </div>
+	<g-link class="Logo" to="/">
+		<span>/rebz</span>
+	</g-link>
 </template>

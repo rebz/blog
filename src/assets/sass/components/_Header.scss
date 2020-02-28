@@ -1,3 +1,6 @@
 .Header {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $size-4 $size-4;
 }

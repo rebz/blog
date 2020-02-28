@@ -1,21 +1,22 @@
 <template>
-    <div cass="Layout">
+    <div class="Layout">
 
 		<header class="Header">
 
 			<rebz-logo />
 
-            <!-- <g-link to="/">{{ $static.metadata.siteName }}</g-link> -->
-
-            <nav class="nav">
-                <g-link class="nav__link" to="/">Home</g-link>
-                <g-link class="nav__link" to="/blog/">Blog</g-link>
-                <g-link class="nav__link" to="/about/">About</g-link>
+            <nav class="Nav">
+                <g-link class="NavItem" to="/blog/">Blog</g-link>
+                <g-link class="NavItem" to="/about/">About</g-link>
             </nav>
 
         </header>
 
-        <slot />
+		<div class="Layout__con">
+
+			<slot />
+
+		</div>
 
     </div>
 </template>

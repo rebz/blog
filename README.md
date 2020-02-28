@@ -4,16 +4,28 @@
 
 This is the project you get when you run `gridsome create new-project`.
 
-### 1. Install Gridsome CLI tool
+### 1. Prep It
 
 `npm i -G @gridsome/cli`
 
-### 2. Install Dependencies
+### 2. Install It
 
 1. `nvm use` to switch to Node Version defined in `.npmrc`
 2. `npm i` to install dependencies
 
-### 3. Start Coding
+### 3. Code It
 
 `npm run dev` to start a local dev server at `http://localhost:8080`
 
+### 3. Build It
+
+`npm run build` to generate a production-ready version to `/dist`
+
+---
+
+# Look Into
+ 
+ - https://gridsome.org/plugins/gridsome-plugin-flexsearch
+ - https://gridsome.org/plugins/gridsome-plugin-manifest
+ - https://gridsome.org/plugins/gridsome-plugin-algolia
+ - https://gridsome.org/plugins/gridsome-plugin-sentry`

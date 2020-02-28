@@ -1,6 +1,11 @@
-.Logo {
+.Nav {
+    display: flex;
+}
+
+.NavItem {
     text-decoration: none;
     font-weight: $font-bold;
     color: $font-color;
+    @include font-size($text-sm);
     padding: $size-4;
 }
