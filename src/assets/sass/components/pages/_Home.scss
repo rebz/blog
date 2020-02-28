@@ -1,0 +1,47 @@
+.Home {
+
+    &__hero {
+        max-width: $tablet;
+        margin: 0 auto;
+        padding: $size-20 0;
+        text-align: center;
+        user-select: none;
+    }
+
+    &__title {
+        @include font-size($text-8xl);
+        font-weight: $font-black;
+        line-height: $text-8xl;
+
+        span {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            padding: $size-0 $size-4;
+
+            &:before {
+                display: block;
+                content: '';
+                background: $color-white;
+                height: 18%;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 5;
+                position: absolute;
+                opacity: 1;
+                box-shadow: $size-0 -#{$size-1} $size-4 -#{$size-1} rgba($color-grey-900, 0.5);
+            }
+        }
+    }
+
+    &__subtitle {
+        margin-top: $size-4;
+        line-height: $text-4xl;
+        color: $color-grey-800;
+        font-weight: $font-light;
+        letter-spacing: $size-px;
+        font-style: italic;
+    }
+}

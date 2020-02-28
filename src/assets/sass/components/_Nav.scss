@@ -7,5 +7,5 @@
     font-weight: $font-bold;
     color: $font-color;
     @include font-size($text-sm);
-    padding: $size-4;
+    padding: $size-4 $size-6;
 }

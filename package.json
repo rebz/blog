@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "dev": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "sharp": "rm -rf node_modules/sharp && npm i && npm run dev"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
@@ -14,6 +15,7 @@
     "gridsome-plugin-rss": "^1.2.0"
   },
   "devDependencies": {
+    "@playlyfe/gql": "^2.6.2",
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2"
   }

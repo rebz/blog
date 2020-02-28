@@ -1,5 +1,7 @@
 module.exports = {
-	siteName: 'Gridsome',
+	siteName: 'rebz.dev',
+	siteUrl: 'https://rebz.dev',
+	siteDescription: 'Some bits of code from a 10+ year ux engineer.',
 	plugins: [
 		{
 			use: '@gridsome/vue-remark',
@@ -19,7 +21,11 @@ module.exports = {
 		{
 			use: '@gridsome/plugin-google-analytics',
 			options: {
-				id: process.env.GOOGLE_ANALYTICS || undefined
+				id: process.env.GOOGLE_ANALYTICS,
+				debug: {
+					sendHitTask: process.env.NODE_ENV === 'production',
+					enabled: process.env.NODE_ENV !== 'production'
+				}
 			}
 		},
 		// {
