@@ -6,6 +6,25 @@
     text-decoration: none;
     font-weight: $font-bold;
     color: $font-color;
-    @include font-size($text-sm);
-    padding: $size-4 $size-6;
+    @include font-size($text-2xs);
+    padding: $size-0 $size-4;
+    letter-spacing: $size-px;
+    text-transform: uppercase;
+    background: $color-white;
+    height: $size-8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $size-1;
+    color: $color-red-500;
+    transition: background 200ms $animate__cubic-bezier--enter;
+
+    &:hover {
+        color: $color-pink-900;
+    }
+    
+    &:active {
+        color: $color-white;
+        background: $color-pink-400;
+    }
 }

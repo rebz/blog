@@ -2,6 +2,7 @@ module.exports = {
 	siteName: 'rebz.dev',
 	siteUrl: 'https://rebz.dev',
 	siteDescription: 'Some bits of code from a 10+ year ux engineer.',
+	icon: 'src/assets/icons/favicon.png',
 	plugins: [
 		{
 			use: '@gridsome/vue-remark',

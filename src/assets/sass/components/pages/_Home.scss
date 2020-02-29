@@ -3,45 +3,59 @@
     &__hero {
         max-width: $tablet;
         margin: 0 auto;
-        padding: $size-20 0;
+        padding: $size-20 $size-4;
         text-align: center;
         user-select: none;
     }
 
     &__title {
-        @include font-size($text-8xl);
         font-weight: $font-black;
+        @include font-size($text-8xl);
         line-height: $text-8xl;
+        display: flex;
+        flex-direction: column;
+        font-family: $font-headline;
+        
+        @include breakpoint(phone-landscape) {
+            @include font-size($text-10xl);
+            line-height: $text-10xl;
+        }
 
         span {
             display: inline-block;
             position: relative;
             overflow: hidden;
-            padding: $size-0 $size-4;
+            padding: $size-0 $size-2;
+            align-self: center;
 
-            &:before {
+            &:before, &:after {
                 display: block;
                 content: '';
-                background: $color-white;
-                height: 18%;
                 width: 100%;
                 bottom: 0;
                 left: 0;
                 right: 0;
-                z-index: 5;
                 position: absolute;
-                opacity: 1;
-                box-shadow: $size-0 -#{$size-1} $size-4 -#{$size-1} rgba($color-grey-900, 0.5);
+            }
+            
+            &:before {
+                background: $color-white;
+                height: 20%;
+                z-index: 5;
+                box-shadow: 0px 16px 16px 16px rgba($color-grey-900, 0.3);
             }
         }
     }
 
     &__subtitle {
-        margin-top: $size-4;
+        margin-top: $size-8;
         line-height: $text-4xl;
-        color: $color-grey-800;
-        font-weight: $font-light;
-        letter-spacing: $size-px;
-        font-style: italic;
+        color: $color-grey-700;
+        font-weight: $font-semibold;
+    }
+
+    &__feed {
+        max-width: $phone-landscape;
+        margin: 0 auto;
     }
 }

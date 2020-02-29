@@ -6,8 +6,7 @@
 			<rebz-logo />
 
             <nav class="Nav">
-                <g-link class="NavItem" to="/blog/">Blog</g-link>
-                <g-link class="NavItem" to="/about/">About</g-link>
+                <g-link class="NavItem" title="About Rebz and this site" to="/about/">About</g-link>
             </nav>
 
         </header>
@@ -30,11 +29,3 @@
         }
     };
 </script>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>

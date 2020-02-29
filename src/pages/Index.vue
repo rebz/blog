@@ -3,27 +3,57 @@
     <Layout>
 
 		<div class="Home__hero">
-			<h1 class="Home__title"><span>Some bits</span><br><span>of code.</span></h1>
+			<h1 class="Home__title">
+				<span>Some bits</span>
+				<span>of code.</span>
+			</h1>
 			<h2 class="Home__subtitle">
-				...from a 10+ year ux engineer building random apps.
+				Take it with a grain of UX.
 			</h2>
 		</div>
 
-		<recent-blog-feed />
+		<div class="Home__feed">
+			<article-preview
+				v-for="post in $static.posts.edges"
+				:post="post.node"
+				:key="`ap-${post.node.id}`"
+			/>
+		</div>
 
     </Layout>
 
 </template>
 
+<static-query>
+query {
+  posts: allPost {
+    edges {
+      node {
+		id
+        title
+		excerpt
+        path
+		tags {
+          id
+          title
+          path
+        }
+      }
+    }
+  }
+}
+
+</static-query>
+
 <script>
-	import RecentBlogFeed from '@/components/RecentBlogFeed.vue'
+	import ArticlePreview from '@/components/ArticlePreview.vue'
 
 	export default {
 		components: {
-			RecentBlogFeed
+			ArticlePreview
 		},
 		metaInfo: {
 			title: "Home"
-		}
+		},
 	};
 </script>

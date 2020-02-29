@@ -1,6 +1,13 @@
 .Logo {
     text-decoration: none;
     font-weight: $font-bold;
-    color: $font-color;
-    padding: $size-4;
+    color: $color-pink-400;
+    // padding: $size-4;
+    background: linear-gradient(0.25turn, $color-pink-300, $color-red-500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    img {
+        max-width: $size-6;
+    }
 }

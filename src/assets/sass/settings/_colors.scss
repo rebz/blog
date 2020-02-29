@@ -56,15 +56,26 @@ $color-green-800: hsla(141, 70%, 27%, 1);
 $color-green-900: hsla(141, 61%, 20%, 1);
 
 // purple
-$color-purple-100: hsla(306, 100%, 94%, 1);
-$color-purple-200: hsla(307, 95%, 84%, 1);
-$color-purple-300: hsla(307, 90%, 72%, 1);
-$color-purple-400: hsla(307, 78%, 60%, 1);
-$color-purple-500: hsla(307, 91%, 43%, 1);
-$color-purple-600: hsla(307, 95%, 36%, 1); // -- primary
-$color-purple-700: hsla(307, 87%, 30%, 1);
-$color-purple-800: hsla(307, 75%, 25%, 1);
-$color-purple-900: hsla(307, 64%, 21%, 1);
+$color-purple-100: hsla(290, 100%, 94%, 1);
+$color-purple-200: hsla(290, 95%, 84%, 1);
+$color-purple-300: hsla(290, 90%, 72%, 1);
+$color-purple-400: hsla(290, 78%, 60%, 1);
+$color-purple-500: hsla(290, 63%, 51%, 1);
+$color-purple-600: hsla(290, 95%, 36%, 1); // -- primary
+$color-purple-700: hsla(290, 87%, 30%, 1);
+$color-purple-800: hsla(290, 75%, 25%, 1);
+$color-purple-900: hsla(290, 64%, 21%, 1);
+
+// purple
+$color-pink-100: hsla(323, 100%, 94%, 1);
+$color-pink-200: hsla(323, 95%, 84%, 1);
+$color-pink-300: hsla(323, 90%, 72%, 1);
+$color-pink-400: hsla(323, 78%, 60%, 1);
+$color-pink-500: hsla(323, 91%, 43%, 1);
+$color-pink-600: hsla(323, 95%, 36%, 1); // -- primary
+$color-pink-700: hsla(323, 87%, 30%, 1);
+$color-pink-800: hsla(323, 75%, 25%, 1);
+$color-pink-900: hsla(323, 64%, 21%, 1);
 
 // orange
 $color-orange-100: hsla(26, 100%, 90%, 1);
@@ -76,14 +87,3 @@ $color-orange-600: hsla(26, 100%, 42%, 1);
 $color-orange-700: hsla(26, 100%, 34%, 1);
 $color-orange-800: hsla(26, 100%, 27%, 1);
 $color-orange-900: hsla(26, 100%, 20%, 1);
-
-// Primary
-$color-primary-100: $color-red-100;
-$color-primary-200: $color-red-200;
-$color-primary-300: $color-red-300;
-$color-primary-400: $color-red-400;
-$color-primary-500: $color-red-500;
-$color-primary-600: $color-red-600;
-$color-primary-700: $color-red-700;
-$color-primary-800: $color-red-800;
-$color-primary-900: $color-red-900;

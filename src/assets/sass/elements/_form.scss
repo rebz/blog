@@ -37,8 +37,8 @@ input[type="checkbox"] {
 
     &:checked {
         box-shadow: $shadow-inner-white;
-        border-color: $color-primary-300;
-        background-color: $color-primary-500;
+        border-color: $color-blue-300;
+        background-color: $color-blue-500;
 
         &:disabled {
             border-color: $color-grey-200;

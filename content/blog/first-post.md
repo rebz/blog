@@ -1,7 +1,8 @@
 ---
 title: First Post
 excerpt: Lorem Ipsum is simply dummy text.
-tags: ['first']
+tags: ['first', 'ya last']
+date: 2020-01-05
 ---
 import TestComponent from '@/components/TestComponent.vue'
 
