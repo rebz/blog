@@ -42,7 +42,7 @@
                 background: $color-white;
                 height: 20%;
                 z-index: 5;
-                box-shadow: 0px 16px 16px 16px rgba($color-grey-900, 0.3);
+                box-shadow: 0px $size-4 $size-4 $size-4 rgba($color-grey-900, 0.3);
             }
         }
     }
@@ -57,5 +57,9 @@
     &__feed {
         max-width: $phone-landscape;
         margin: 0 auto;
+
+        @include between-breakpoints(0, $phone-landscape) {
+            padding: $size-0 $size-8;
+        }
     }
 }

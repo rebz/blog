@@ -30,6 +30,7 @@ query {
     edges {
       node {
 		id
+		date
         title
 		excerpt
         path

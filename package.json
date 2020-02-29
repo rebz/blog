@@ -10,6 +10,7 @@
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/vue-remark": "^0.1.10",
+    "date-fns": "^2.10.0",
     "gridsome": "^0.7.0",
     "gridsome-plugin-pwa": "0.0.13",
     "gridsome-plugin-rss": "^1.2.0"

@@ -14,9 +14,13 @@
         text-decoration: none;
     }
 
+    &__meta {
+        display: flex;
+        @include font-size($text-xs);
+    }
+
     &__tags {
         margin: $size-0 -#{$size-1};
-        @include font-size($text-xs);
         display: inline-block;
 
         span {
@@ -29,6 +33,15 @@
             padding: $size-0 $size-1;
             margin: $size-1;
         }
+    }
+
+    &__date {
+        height: $size-5;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $size-1;
+        margin: $size-1 $size-4 $size-1 $size-0;
     }
 
     &:hover {
