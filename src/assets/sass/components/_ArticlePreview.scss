@@ -46,7 +46,10 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            border: $color-grey-500 solid $size-px;
+            // border: $color-grey-300 solid $size-px;
+            background: $color-white;
+            color: $color-grey-700;
+            box-shadow: $shadow;
             border-radius: $size-1;
             padding: $size-0 $size-1;
             margin: $size-1;
