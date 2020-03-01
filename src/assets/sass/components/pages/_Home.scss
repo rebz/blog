@@ -58,7 +58,7 @@
         max-width: $phone-landscape;
         margin: 0 auto;
 
-        @include between-breakpoints(0, $phone-landscape) {
+        @include between-breakpoints(0, $tablet) {
             padding: $size-0 $size-8;
         }
     }
