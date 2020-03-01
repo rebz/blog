@@ -65,10 +65,14 @@
 
     &:hover {
 
-        h1:after {
-            background: linear-gradient(0.25turn, $color-white, $color-white, $color-white, $color-pink-600, $color-red-400, $color-pink-600, $color-white, $color-white);
-            background-size: 1000px 100%;
-            animation: zoomzoom 8000ms $animate__cubic-bezier--enter infinite;
+        h1 {
+            color: $color-pink-900;
+
+            &:after {
+                background: linear-gradient(0.25turn, $color-white, $color-white, $color-white, $color-pink-600, $color-red-400, $color-pink-600, $color-white, $color-white);
+                background-size: 1000px 100%;
+                animation: zoomzoom 8000ms $animate__cubic-bezier--enter infinite;
+            }
         }
     }
 }
