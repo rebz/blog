@@ -1,10 +1,8 @@
-// import { format, formatISO, formatRelative, subDays } from 'date-fns'
+import { format, parseISO } from 'date-fns'
 
 const Datetime = {
 
-	format: dateString => {
-		return dateString
-	},
+	format: dateString => format(parseISO(dateString), 'MMMM d, yyyy'),
 }
 
 export {
