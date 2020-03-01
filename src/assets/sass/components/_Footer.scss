@@ -1,0 +1,15 @@
+.Footer {
+    border-top: $size-px $color-grey-300 solid;
+
+    &__con {
+        display: flex;
+        max-width: $tablet;
+        margin: 0 auto;
+        align-items: center;
+        padding: $size-4;
+        justify-content: flex-end;
+        user-select: none;
+        @include font-size($text-sm);
+        color: $color-grey-500;
+    }
+}

@@ -2,10 +2,11 @@
     text-decoration: none;
     font-weight: $font-bold;
     color: $color-pink-400;
-    // padding: $size-4;
+    padding: $size-4;
     background: linear-gradient(0.25turn, $color-pink-300, $color-red-500);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    user-select: none;
 
     img {
         max-width: $size-6;

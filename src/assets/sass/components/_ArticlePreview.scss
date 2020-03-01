@@ -1,10 +1,28 @@
 .ArticlePreview {
-    // text-align: center;
 
     h1 {
         @include font-size($text-3xl);
         font-weight: $font-black;
         font-family: $font-headline;
+        position: relative;
+        display: inline-block;
+        text-shadow:    2px 2px $color-white,
+                        2px -2px $color-white,
+                        -2px 2px $color-white,
+                        -2px -2px $color-white;
+
+        &:after {
+            display: block;
+            position: absolute;
+            bottom: 4px;
+            content: '';
+            height: 2px;
+            left: 0;
+            width: 100%;
+            background: $color-white;
+            background-position: $size-0;
+            z-index: -1;
+        }
     }
 
     a {
@@ -46,36 +64,20 @@
 
     &:hover {
 
-        h1 {
-            color: $color-pink-500;
+        h1:after {
+            background: linear-gradient(0.25turn, $color-white, $color-white, $color-white, $color-pink-600, $color-red-400, $color-pink-600, $color-white, $color-white);
+            background-size: 1000px 100%;
+            animation: bg 8s $animate__cubic-bezier--enter infinite;
         }
-
-        // .purple {
-        //     color: $color-purple-500;
-        // }
-
-        // .yellow {
-        //     color: $color-yellow-700;
-        // }
-
-        // .orange {
-        //     color: $color-orange-600;
-        // }
-
-        // .red {
-        //     color: $color-red-500;
-        // }
-
-        // .blue {
-        //     color: $color-blue-500;
-        // }
-
-        // .green {
-        //     color: $color-green-600;
-        // }
-
-        // .pink {
-        //     color: $color-pink-400;
-        // }
     }
 }
+
+
+@keyframes bg {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 10000px;
+    }
+  }

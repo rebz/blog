@@ -2,7 +2,7 @@
 	<article class="ArticlePreview" :key="post.id">
 		<g-link :to="post.path">
 
-			<h1 :class="Color.getRandomColor()">
+			<h1>
 				{{ post.title }}
 			</h1>
 
@@ -12,9 +12,9 @@
 
 			<div class="ArticlePreview__meta">
 
-				<!-- <div class="ArticlePreview__date">
-					{{ post.date }}
-				</div> -->
+				<div class="ArticlePreview__date">
+					{{ post.date | date }}
+				</div>
 
 				<div class="ArticlePreview__tags">
 					<span v-for="tag in post.tags">
@@ -29,9 +29,7 @@
 </template>
 
 <script>
-	import { Color } from '@/utils/Color'
 	import { Datetime } from '@/utils/Datetime'
-
 
 	export default {
 		props: {
@@ -41,8 +39,10 @@
 				default: undefined
 			}
 		},
+		filters: {
+			date: Datetime.format
+		},
 		data: () => ({
-			Color,
 			Datetime
 		})
 	}
