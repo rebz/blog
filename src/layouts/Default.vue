@@ -17,7 +17,11 @@
 
 			</header>
 
-			<slot />
+      		<transition name="fade" appear>
+				<main>
+					<slot />
+				</main>
+      		</transition>
 
 		</div>
 

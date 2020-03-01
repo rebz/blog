@@ -55,9 +55,10 @@
 
     &__date {
         height: $size-5;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        @include font-size($text-xs);
+        color: $color-grey-600;
+        letter-spacing: 1px;
         border-radius: $size-1;
         margin: $size-1 $size-4 $size-1 $size-0;
     }
@@ -67,13 +68,13 @@
         h1:after {
             background: linear-gradient(0.25turn, $color-white, $color-white, $color-white, $color-pink-600, $color-red-400, $color-pink-600, $color-white, $color-white);
             background-size: 1000px 100%;
-            animation: bg 8s $animate__cubic-bezier--enter infinite;
+            animation: zoomzoom 8000ms $animate__cubic-bezier--enter infinite;
         }
     }
 }
 
 
-@keyframes bg {
+@keyframes zoomzoom {
     0% {
       background-position-x: 0;
     }
