@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@playlyfe/gql": "^2.6.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2"
   }
 }
